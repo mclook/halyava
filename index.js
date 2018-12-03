@@ -12,6 +12,7 @@ bot.on('message',msg=>{
    bot.sendMessage(chatMax,id);
 
     bot.sendMessage(chatMax,id.message_id);
+    bot.sendMessage(chatMax,'pa');
     //message.message_id
    // const {message:{message_id}}=msg;
     bot.forwardMessage(chatMax,id,msg.message.message_id);
