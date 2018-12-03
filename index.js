@@ -10,13 +10,13 @@ bot.on('message',(msg)=>{
    const {chat:{id}}=msg;
    // const {message_id}=msg.message
    // const{message:{chat,message_id,text}}=msg;
-   bot.sendMessage(chatMax,id);
+   //bot.sendMessage(chatMax,id);
 
-    bot.sendMessage(chatMax,msg.from.first_name);
-    bot.sendMessage(chatMax,'pa');
+   // bot.sendMessage(chatMax,msg.from.first_name);
+   // bot.sendMessage(chatMax,'pa');
     //message.message_id
    // const {message:{message_id}}=msg;
-    bot.forwardMessage(chatMax,id,msg.message_id);
+    bot.forwardMessage('452867599',msg.chat.id,msg.message_id);
 
 
 
