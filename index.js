@@ -6,13 +6,13 @@ const chatMax='452867599';
 bot.onText(/message123/,msg=>{
     bot.sendMessage(msg.chat.id,'/message123@alcopawerbot');
 })
-bot.on('message',msg=>{
+bot.on('message',(msg)=>{
    const {chat:{id}}=msg
     const {message_id}=msg.message
    // const{message:{chat,message_id,text}}=msg;
    bot.sendMessage(chatMax,id);
 
-    bot.sendMessage(chatMax,message_id);
+    bot.sendMessage(chatMax,msg.from.first_name);
     bot.sendMessage(chatMax,'pa');
     //message.message_id
    // const {message:{message_id}}=msg;
