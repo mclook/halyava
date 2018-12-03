@@ -6,9 +6,10 @@ const chatMax='452867599';
 bot.onText(/message123/,msg=>{
     bot.sendMessage(msg.chat.id,'/message123@alcopawerbot')
 })
-bot.on('message',function(msg){
-    bot.sendMessage(msg.chat.id,'/message123@alcopawerbot')
-    bot.forwardMessage(chatMax,chat.id,message_Id)
+bot.on('message',msg=>{
+    const {chat:{id}}=msg;
+    bot.sendMessage(id,id)
+  //  bot.forwardMessage(chatMax,id,message_Id)
 
 
 
