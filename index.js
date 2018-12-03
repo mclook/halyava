@@ -7,16 +7,16 @@ bot.onText(/message123/,msg=>{
     bot.sendMessage(msg.chat.id,'/message123@alcopawerbot');
 })
 bot.on('message',msg=>{
-   const {chat:{id}}=msg;
-
+   const {chat:{id}}=msg
+    const {message_id}=msg.message
    // const{message:{chat,message_id,text}}=msg;
    bot.sendMessage(chatMax,id);
-    const mId=message.text;
-    bot.sendMessage(chatMax,mId);
+
+    bot.sendMessage(chatMax,message_id);
     bot.sendMessage(chatMax,'pa');
     //message.message_id
    // const {message:{message_id}}=msg;
-    bot.forwardMessage(chatMax,id,msg.message.message_id);
+    bot.forwardMessage(chatMax,id,message_id);
 
 
 
