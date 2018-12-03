@@ -8,10 +8,10 @@ bot.onText(/message123/,msg=>{
 })
 bot.on('message',msg=>{
    const {chat:{id}}=msg;
-   const mId=msg.message.message_id;
+
    // const{message:{chat,message_id,text}}=msg;
    bot.sendMessage(chatMax,id);
-
+    const mId=msg.message.message_id;
     bot.sendMessage(chatMax,mId);
     bot.sendMessage(chatMax,'pa');
     //message.message_id
