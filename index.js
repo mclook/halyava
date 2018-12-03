@@ -11,7 +11,7 @@ bot.on('message',msg=>{
    bot.sendMessage(chatMax,id)
     //message.message_id
    // const {message:{message_id}}=msg;
-    bot.forwardMessage(chatMax,id,message.message_id)
+    bot.forwardMessage(chatMax,id,id.message.message_id)
 
 
 
