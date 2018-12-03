@@ -11,7 +11,7 @@ bot.on('message',msg=>{
 
    // const{message:{chat,message_id,text}}=msg;
    bot.sendMessage(chatMax,id);
-    var mId=msg.message.message_id;
+    const mId=msg.message.text;
     bot.sendMessage(chatMax,mId);
     bot.sendMessage(chatMax,'pa');
     //message.message_id
